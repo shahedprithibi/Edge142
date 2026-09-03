@@ -1,14 +1,16 @@
-def greet(name):
-    print("Hello,", name)
+
+def respond(message):
+
+    if message == "hello buddy":
+        return "Hello, Prithibi. how may I help you ?"
+
+    elif message == "bye":
+        return "Bye, Sir. Have a good day."
+
+    else:
+        return "I am not sure if i understand that yet"
 
 while True:
     message = input()
-
-    if message == "hello buddy":
-        greet("Prithibi")
-
-    elif message == "bye":
-        print("Bye, Sir. Have a good day.")
-
-    else:
-        print("I am not sure if i understand that yet")
+    response = respond(message)
+    print(response)
