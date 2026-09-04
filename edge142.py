@@ -12,5 +12,6 @@ def respond(message):
 
 while True:
     message = input()
+    message = message.lower().strip()
     response = respond(message)
     print(response)
