@@ -27,8 +27,7 @@ Understand the system instead of blindly copying code.
 - Continuous text-based interaction
 - Input normalization using lowercase conversion and whitespace removal
 - Basic intent detection
-- Greeting detection
-- Farewell detection
+- Greeting detection & Farewell detection
 - Unknown-intent handling
 
 ## Current Architecture
