@@ -1,8 +1,10 @@
 def detect_intent(message):
-    if "hello" in message or "hey" in message: 
+    words = message.split()
+
+    if "hello" in words or "hey" in words: 
         return "greeting"
 
-    elif "bye" in message or "goodbye" in message:
+    elif "bye" in words or "goodbye" in words:
         return "farewell"
 
     else:
