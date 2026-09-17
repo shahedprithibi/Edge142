@@ -1,3 +1,5 @@
+import string
+
 def detect_intent(message):
     words = message.split()
 
@@ -9,7 +11,6 @@ def detect_intent(message):
 
     else:
         return "unknown"
-
 
 def respond(message):
 
@@ -24,9 +25,11 @@ def respond(message):
     else:
         return "I am not sure if I understand that yet"
 
+table = str.maketrans("","", string.punctuation)
 
 while True:
     message = input()
     message = message.lower().strip()
+    message = message.translate(table)
     response = respond(message)
     print(response)
